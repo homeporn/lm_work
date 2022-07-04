@@ -1,0 +1,35 @@
+@import 'media/media';
+@import 'lib/fonts';
+@import 'base/variables';
+
+* {
+    font-family: 'Euclid Circular A';
+    box-sizing: border-box;
+}
+
+html {
+    background-color: $background;
+}
+
+h1 {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 200px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 100px;
+    color: #F4F7FA;
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/button';
