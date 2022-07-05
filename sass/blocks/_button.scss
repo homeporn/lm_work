@@ -1,0 +1,47 @@
+.lang__list {
+    padding: 16px;
+    width: 117px;
+    height: 80px;
+    border: 3px solid $button;
+    background-color: $background;
+    color: $gray;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.button__client {
+    padding: 16px 30px;
+    gap: 8px;
+    width: 225px;
+    height: 80px;
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: $button;
+    color: $background;
+    border: none;
+    transition: background-color 1s, color 1s;
+    cursor: pointer;
+    &:-webkit-transition{
+        background-color: 1s;
+    } 
+    &:hover {
+        padding: 16px 30px;
+        gap: 8px;
+        width: 225px;
+        height: 80px;
+        background-color: $background;
+        color: $button;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+}

@@ -14,11 +14,12 @@ html {
 h1 {
     font-family: 'Euclid Circular A';
     font-style: normal;
-    font-weight: 400;
-    font-size: 200px;
-    line-height: 200px;
-    letter-spacing: -0.04em;
-    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F4F7FA;
 }
 
 h2 {
@@ -30,6 +31,12 @@ h2 {
     color: #F4F7FA;
 }
 
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/button';
+@import 'blocks/options';

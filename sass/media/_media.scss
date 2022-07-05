@@ -1,7 +1,21 @@
 @media (max-width: 1920px) {
-    
+    .container {
+        max-width: 1920px;
+    }
 }
 
 @media (max-width: 1440px) {
-    
+    .container {
+        max-width: 768px;
+        &h1 {
+            font-size: 50px;
+        }
+    }
+    .menu__wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+
 }

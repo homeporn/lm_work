@@ -1,4 +1,25 @@
+
+.main__wrapper {
+    min-height: 900px;
+    padding: 180px 0 180px 0;
+    background-image: url(../../img/mainbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 670px;
+    background-position: top 295px right 0px;
+}
+
 .main__title {
-    width: 1125px;
-    height: 300px;
+    max-width: 1125px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.main__subtitle {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #92A4B2;
+    margin: 0 auto;
+    padding: 43px 0 177px 0;
 }
