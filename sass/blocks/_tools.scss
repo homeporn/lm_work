@@ -1,0 +1,63 @@
+.tools__wrapper {
+    height: 716px;
+}
+
+.tools__item {
+    max-height: 885px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tools__item-container {
+    width: 425px;
+    height: 184px;
+    &:nth-child(1){
+        background: url(../../icons/tools_item.svg);
+        background-repeat: no-repeat;
+        background-position: left 20px top 90px;
+        background-color:#0E3848;
+    }
+    &:nth-child(2){
+        background: url(../../icons/tools_item2.svg);
+        background-repeat: no-repeat;
+        background-position: left -3px top -20px;
+        background-color:#0E3848;
+    }
+    &:nth-child(3){
+        background: url(../../icons/tools_item.svg);
+        background-repeat: no-repeat;
+        background-color:#0E3848;
+    }
+    &:nth-child(4){
+        background: url(../../icons/tools_item3.svg);
+        background-repeat: no-repeat;
+        background-color:#0E3848;
+    }
+    &:nth-child(5){
+        background: url(../../icons/tools_item.svg);
+        background-repeat: no-repeat;
+        background-position: left -3px top -20px;
+        background-color:#0E3848;
+    }
+    &:nth-child(6){
+        background: url(../../icons/tools_item.svg);
+        background-repeat: no-repeat;
+        background-color:#0E3848;
+    }
+    &:nth-child(7){
+        background: url(../../icons/tools_item.svg);
+        background-repeat: no-repeat;
+        background-color:#0E3848;
+    }
+}
+
+.tools__item-subtitle{
+    padding-top: 73px;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #F4F7FA;
+}

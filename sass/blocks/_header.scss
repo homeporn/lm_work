@@ -2,9 +2,14 @@
     margin-top: 40px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     background-color: $background;
+}
+
+.logo__brand {
+    width: 311.73px;
+    height: 80px;
 }
 
 .menu__list {

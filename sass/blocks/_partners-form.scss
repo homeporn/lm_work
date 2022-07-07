@@ -1,0 +1,36 @@
+.partners__form-wrapper {
+    min-height: 768px;
+    margin-top: 180px;
+    background-image: url(../../img/mainbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 670px;
+    background-position: top 141px right 0px;
+}
+
+.partners__form-subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #92A4B2;
+}
+
+.partners__form-send form{
+    margin-top: 132px;
+    display: grid;
+    grid-template-columns: 624px 624px;
+    grid-template-rows: 90px 90px;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.form__input {
+    padding: 25px 0 25px 30px;
+    background: #0E3848;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #92A4B2;
+    border: none;
+}

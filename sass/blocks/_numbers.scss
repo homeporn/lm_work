@@ -1,0 +1,35 @@
+.numbers__list {
+    margin-top: 76px;
+    display: grid;
+    grid-template-columns: repeat(3, 575px);
+    grid-template-rows: 291px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.numbers__item {
+    position: relative;
+    &-title {
+        font-size: 200px;
+        line-height: 200px;
+        text-align: center;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+    }
+    &-subtitle {
+        width: 333px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #4DA19F;
+        margin: 0 auto;
+    }
+    &-line {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 3px;
+        background-image: linear-gradient(#418D8B, #0E3848);
+    }
+}

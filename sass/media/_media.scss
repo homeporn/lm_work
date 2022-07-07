@@ -6,16 +6,103 @@
 
 @media (max-width: 1440px) {
     .container {
-        max-width: 768px;
-        &h1 {
-            font-size: 50px;
+        max-width: 1440px;
+        margin: 0 40px 0 40px;
+        }
+    h1 {
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 72px;
+    }
+    
+    .logo__brand img{
+        width: 258px;
+        height: 66px;
+    }
+
+    .menu__list {
+        gap: 40px;
+    }
+
+    .menu__item a{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .button__client {
+        padding: 16px 30px;
+        width: 207px;
+        height: 80px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        &:hover {
+            padding: 16px 30px;
+            gap: 8px;
+            width: 207px;
+            height: 80px;
+            background-color: $background;
+            color: $button;
+            font-size: 16px;
+            line-height: 16px;
+            text-transform: uppercase;
         }
     }
-    .menu__wrapper {
+
+    .main__title {
+        width: 909px;
+        height: 216px;
+    }
+    .options {
+        display: grid;
+        grid-template-columns: repeat(2, 670px);
+        grid-template-rows: repeat(2, 307px);
+        grid-auto-flow: row;
+        grid-gap: 20px;
+    }
+    .options__item {
+        width: 670px;
+    }
+    .options__item-link {
+        gap: 400px;
+    }
+
+    .markets__title h2 {
+        font-size: 72px;
+        line-height: 72px;
+    }
+
+    .markets__map img{
         width: 100%;
+        height: 718px;
+    }
+    .tools__item-container{
+        width: 325px;
+        height: 141px;
+    }
+    .tools__item-subtitle{
+        padding-top: 59px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .approach__table {
+        display: grid;
+        grid-template-columns: 97px 611px 562px;
+    }
+    .numbers__list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
     }
 }
 
-@media (max-width: 768px){
-
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 40px 0 40px;
+        }
+    .tools__item-container{
+        width: 230px;
+        height: 121px;
+}
 }

@@ -1,0 +1,39 @@
+.questions__list {
+    display: grid;
+    grid-template-columns: 890px 600px;
+    grid-template-rows: repeat(4, 90px);
+    justify-content: center;
+    grid-template-areas: 
+    "questions__title questions__item-1"
+    ". questions__item-2"
+    ". questions__item-3"
+    ". questions__item-4";
+}
+
+.questions__title { grid-area: questions__title; }
+.questions__item-1 { grid-area: questions__item-1; }
+.questions__item-2 { grid-area: questions__item-2; }
+.questions__item-3 { grid-area: questions__item-3; }
+.questions__item-4 { grid-area: questions__item-4; }
+
+.questions__item-1, .questions__item-2, .questions__item-3, .questions__item-4 {
+    width: 100%;
+}
+
+.questions__title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #F4F7FA;
+}
+
+.questions__item-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #F4F7FA;
+}
+
+.questions__item-descr {
+    color: #F4F7FA;
+}

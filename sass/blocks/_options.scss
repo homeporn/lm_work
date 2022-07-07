@@ -1,14 +1,16 @@
 .options {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 425px);
+    grid-auto-flow: row;
+    grid-gap: 20px;
+    justify-content: center;
 }
 
 .options__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(1/4*100% - (1 - 1/4)*10px);
+    width: 425px;
     height: 307px;
     gap: 21px;
     padding: 30px 50px 30px 30px;
@@ -45,9 +47,7 @@
         line-height: 24px;
         color: #F4F7FA;
         text-decoration: none;
-        &more__arrow {
-            margin-left: 146px;
-        }
+        gap: 150px;
     }
 }
 

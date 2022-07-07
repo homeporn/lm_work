@@ -1,0 +1,30 @@
+.footer__wrapper {
+    border-top: 1px solid gray;
+    padding-top: 63px;
+    display: grid;
+    grid-template-columns: 311px 457px 462px 249px;
+    grid-template-rows: 144px;
+    justify-content: space-between;
+    font-size: 32px;
+    line-height: 32px;
+    color: #F4F7FA;
+    &logo {
+        margin: 0 auto;
+    }
+    &adress {
+        margin: 0 auto;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 32px;
+        color: #F4F7FA;
+    }
+    &contacts {
+        margin: 0 auto;
+        font-size: 32px;
+        line-height: 32px;
+        color: #F4F7FA;
+    }
+    &button {
+        margin: 0 auto;
+    }
+}
