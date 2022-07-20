@@ -1,5 +1,5 @@
 .tools__wrapper {
-    height: 716px;
+    min-height: 716px;
 }
 
 .tools__item {
@@ -14,13 +14,13 @@
     width: 425px;
     height: 184px;
     &:nth-child(1){
-        background: url(../../icons/tools_item.svg);
+        background: url('../../icons/tools_item.svg');
         background-repeat: no-repeat;
         background-position: left 20px top 90px;
         background-color:#0E3848;
     }
     &:nth-child(2){
-        background: url(../../icons/tools_item2.svg);
+        background: url('../../icons/tools_item2.svg');
         background-repeat: no-repeat;
         background-position: left -3px top -20px;
         background-color:#0E3848;

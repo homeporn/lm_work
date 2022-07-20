@@ -1,8 +1,14 @@
+.questions__wrapper {
+    min-height: 500px;
+}
+
 .questions__list {
+    margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 890px 600px;
-    grid-template-rows: repeat(4, 90px);
+    grid-template-columns: 890px 870px;
+    grid-template-rows: minmax(max-content,max-content,max-content,max-content);
     justify-content: center;
+    align-content: center;
     grid-template-areas: 
     "questions__title questions__item-1"
     ". questions__item-2"
@@ -18,6 +24,7 @@
 
 .questions__item-1, .questions__item-2, .questions__item-3, .questions__item-4 {
     width: 100%;
+    border-bottom: 2px solid gray;
 }
 
 .questions__title {
@@ -34,6 +41,51 @@
     color: #F4F7FA;
 }
 
-.questions__item-descr {
+.questions__item-menu {
+    text-align: left;
+    padding: 18px;
+    width: 100%;
+    height: 90px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: transparent;
+    color: $gray;
+    border: none;
+    outline: none;
+    transition: 1s;
+    cursor: pointer;
+        &:after {
+            content: url('../../icons/arrowdown.svg'); /* Unicode character for "plus" sign (+) */
+            width: 11px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+            }
+        }
+
+
+
+.active {
+    &:after {
+        content: url('../../icons/arrowdown.svg');
+        transform: rotate(90deg);
+        transition: all 0.5s;
+        width: 11px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+
+}
+
+.menumenu {
+    font-size: 16px;
+    line-height: 16px;
     color: #F4F7FA;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: max-height 0.5s ease-out;
+    margin-bottom: 10px;
 }

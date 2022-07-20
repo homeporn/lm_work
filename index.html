@@ -21,6 +21,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Landmark Capital</title>
 </head>
@@ -29,21 +30,29 @@
         <nav class="nav__menu">
             <div class="container">
                 <div class="menu__wrapper">
-                    <div class="logo__brand"><img src="icons/logo/mainlogo.svg" alt="Landmark"></div>
-                    <div class="menu__list">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a href="#">Услуги</a></li>
-                            <li class="menu__item"><a href="#">Документы</a></li>
-                            <li class="menu__item"><a href="#">Аналитика</a></li>
-                            <li class="menu__item"><a href="#">О Компании</a></li>
-                        </ul>
+                    <div class="logo__brand"><img class="logo__size" src="icons/logo/mainlogo.svg" alt="Landmark"></div>
+
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">О Компании</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Продукты</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Регулирование</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Аналитика</a></li>
+                        </ul>
+
+
                     <select name="language" id="lang" class="lang__list">
                         <option value="RU" class="lang__item">RU</option>
                         <option value="AM" class="lang__item">AM</option>
                         <option value="US" class="lang__item">US</option>
                     </select>
-                    <div class="get__client"><button class="button__client">Стать клиентом</button></div>
+                    <div class="get__client"><button class="button__client" action="https://forms.office.com/Pages/ResponsePage.aspx?id=8YDr8_mejEuUMy49M6LDbN-w9XyT_BpAsJTN02xZLvZURE44N0dGNjRLODZCSEdZTERLM0dINE1TNyQlQCN0PWcu">Открыть счёт</button></div>
                 </div>
             </div>
         </nav>
@@ -52,12 +61,13 @@
     <main>
             <div class="main__wrapper">
                 <div class="container">
-                    <h1 class="main__title">Новые горизонты —
-                        большие возможности</h1>
-                        <h2 class="main__subtitle">Самая большая сеть западных торговых линий</h2>
+                    <div class="mobile-get-client"><button class="button__client" action="https://forms.office.com/Pages/ResponsePage.aspx?id=8YDr8_mejEuUMy49M6LDbN-w9XyT_BpAsJTN02xZLvZURE44N0dGNjRLODZCSEdZTERLM0dINE1TNyQlQCN0PWcu">Стать клиентом</button></div>
+                    <h1 class="main__title _anim-items _anim-no-hide">Лучшая инвестиционная компания для международных инвесторов
+                    </h1>
+                        <h2 class="main__subtitle _anim-items _anim-no-hide">Самая большая сеть западных торговых линий</h2>
                         <div class="options">
                             <div class="options__item">
-                                <div class="options__item-title">Доступ на рынки США, ЕС и Армении</div>
+                                <div class="options__item-title">Доступ на международные рынки</div>
                                 <div class="options__item-subtitle">Брокерские услуги</div>
                                 <div class="options__item-link">
                                     <a href="#" class="options__item-link">Подробнее<img src="icons/arrow_right.svg" alt="more" class="more__arrow"></a>                                   
@@ -65,21 +75,21 @@
                             </div>
                             <div class="options__item">
                                 <div class="options__item-title">Конвертация валюты и транзакционные решения</div>
-                                <div class="options__item-subtitle"></div>
+                                <div class="options__item-subtitle">1. Конвертация РУб/Доллар/Евро <br> 2. Перевод ценных бумаг и денежных средст</div>
                                 <div class="options__item-link">
                                     <a href="#" class="options__item-link">Подробнее<img src="icons/arrow_right.svg" alt="more" class="more__arrow"></a>
                                     </div>
                             </div>
                             <div class="options__item">
-                                <div class="options__item-title">Управление капиталами и услугами фондов</div>
-                                <div class="options__item-subtitle"></div>
+                                <div class="options__item-title">Создание, обслуживание и администрирование фондов</div>
+                                <div class="options__item-subtitle">Управление капиталом</div>
                                 <div class="options__item-link">
                                     <a href="#" class="options__item-link">Подробнее<img src="icons/arrow_right.svg" alt="more" class="more__arrow"></a>
                                     </div>
                             </div>
                             <div class="options__item">
                                 <div class="options__item-title">Депозитарные услуги</div>
-                                <div class="options__item-subtitle"></div>
+                                <div class="options__item-subtitle">1.Хранение ценных бумаг <br>2. Конвертация депозиарных расписок <br>3. Сделки DvP, FoP, back-to-back</div>
                                 <div class="options__item-link">
                                     <a href="#" class="options__item-link">Подробнее<img src="icons/arrow_right.svg" alt="more" class="more__arrow"></a>
                                     </div>
@@ -87,7 +97,7 @@
                         </div>
                 </div>      
             </div>
-            <div class="markets__wrapper">
+            <!-- <div class="markets__wrapper">
                 <div class="container">
                     <div class="markets__title">
                         <h2>Доступ к любому рынку</h2>
@@ -96,13 +106,14 @@
                         <img src="icons/map.svg" alt="map">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="tools__wrapper">
                 <div class="container">
                     <div class="markets__title tools__title">
-                        <h2>Все инструменты глобальных рынков</h2>
+                        <h2>Доступ к глобальным рынкам и продуктам
+                        </h2>
                     </div>
-                    <div class="tools__item">
+                    <div class="tools__item slider-mobile">
                         <div class="tools__item-container">
                             <div class="tools__item-subtitle">ETF</div>
                         </div>
@@ -141,42 +152,42 @@
             </div>
             <div class="approach_wrapper">
                 <div class="container">
-                    <div class="markets__title">
-                        <h2>Уникальный подход</h2>
+                    <div class="markets__title approach__title">
+                        <h2>Наши преимущества</h2>
                     </div>
                     <div class="approach__table">
                         <div class="approach__number">01</div>
                         <div class="approach__title">Комплексное сопровождение</div>
-                        <div class="approach__descr">Услуги фондов, брокериджа и вывод активов на международный рынок. 
-                            Всё что нужно, чтобы сохранить и преумножить капитал.</div>
+                        <!-- <div class="approach__descr">Услуги фондов, брокериджа и вывод активов на международный рынок. 
+                            Всё что нужно, чтобы сохранить и преумножить капитал.</div> -->
                         <div class="approach__number">02</div>
                         <div class="approach__title">Гибкость и открытость</div>
-                        <div class="approach__descr">Добиваемся целей, используя развитую сеть партнёрств по всему миру</div>
+                        <!-- <div class="approach__descr">Добиваемся целей, используя развитую сеть партнёрств по всему миру.</div> -->
                         <div class="approach__number">03</div>
                         <div class="approach__title">Скорость работы</div>
-                        <div class="approach__descr">Находим решение для любой задачи. Быстро реагируем на изменения рынка.</div>
+                        <!-- <div class="approach__descr">Находим решение для любой задачи. Быстро реагируем на изменения рынка.</div> -->
                     </div>
                 </div>
             </div>
             <div class="number__wrapper">
                 <div class="container">
-                    <div class="markets__title">
+                    <div class="markets__title numbers__title">
                         <h2>Landmark Capital в цифрах</h2>
                     </div>
                     <div class="numbers__list">
                         <div class="numbers__item">
                             <div class="numbers__item-title">25</div>
-                            <div class="numbers__item-subtitle">валютных пар доступно</div>
+                            <div class="numbers__item-subtitle">валютных пар</div>
                             <div class="numbers__item-line"></div>
                         </div>
                         <div class="numbers__item">
-                            <div class="numbers__item-title">150</div>
+                            <div class="numbers__item-title">2</div>
+                            <div class="numbers__item-subtitle">миллиарда долларов — транзакций</div>
+                            <div class="numbers__item-line"></div>
+                        </div>
+                        <div class="numbers__item">
+                            <div class="numbers__item-title">50+</div>
                             <div class="numbers__item-subtitle">рынков</div>
-                            <div class="numbers__item-line"></div>
-                        </div>
-                        <div class="numbers__item">
-                            <div class="numbers__item-title">33</div>
-                            <div class="numbers__item-subtitle">страны</div>
                             <div class="numbers__item-line"></div>
                         </div>
                     </div>
@@ -184,20 +195,64 @@
             </div>
             <div class="partners__form-wrapper">
                 <div class="container">
-                    <div class="markets__title">
-                        <h2>Обсудим партнёрство?</h2>
-                    </div>
                     <h2 class="partners__form-subtitle">Оставьте контакты — и мы свяжемся с вами</h2>
+                    <h2 class="g-form__title g-form__title_respond"></h2>
+                            <div class="g-form__preloader"></div>
                     <div class="partners__form-send">
-                        <form action="#">
-                            <input class="form__input" type="name" placeholder="Как вас зовут?" type="text">
-                            <input class="form__input" type="email" placeholder="E-mail" type="email">
-                            <input class="form__input" type="phone" placeholder="Телефон" type="tel">
-                            <button class="partners__form-submit">Отправить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+                        <form class="g-form" id="g-form-1" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSeoEEuww8TKvK0lPJ3yQGxg7GYpoOVaa5fY4okNCWW2fwN5UA/formResponse" autocomplete="off">
+                            
+                                    <input id="name" class="form__input" type="name" placeholder="Как вас зовут?" name="entry.1737144337" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i1" aria-describedby="i2 i3" required="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                                
+                                    <input id="email" class="form__input" type="email" placeholder="E-mail" name="entry.1714873993" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i9" aria-describedby="i10 i11" required="" dir="auto" data-initial-dir="auto" data-initial-value="">
+
+                                    <input id="tel" class="form__input" type="phone" placeholder="Телефон" name="entry.1432102369" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i5" aria-describedby="i6 i7" required="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                                
+                                <!-- <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+                                    <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+                                    <input id="honeypot" type="text" name="honeypot" value="">
+                                 </fieldset> -->
+
+                                <button class="g-form__button">Отправить</button>
+
+                                <!-- <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+                                    <h2 class="g-form__title g-form__title_main">Обсудим партнёрство?</h2>
+                                    <h2 class="g-form__title g-form__title_respond"></h2>
+                                    <div class="g-form__preloader"></div>
+                                    <div class="g-form__inputs">
+                                      <fieldset class="g-form__input-wrapper">
+                                        <input class="g-form__input g-form__input_name" id="name" name="Имя" placeholder="Введите ваше имя" required>
+                                      </fieldset>
+                                   
+                                      <fieldset class="g-form__input-wrapper">
+                                        <input class="g-form__input g-form__input_tel" id="tel" name="Телефон" placeholder="Введите ваш телефон">
+                                      </fieldset>
+                                   
+                                      <fieldset class="g-form__input-wrapper">
+                                        <input class="g-form__input g-form__input_email" id="email" name="Email" type="email" value=""
+                                        required placeholder="Введите ваш email"/>
+                                      </fieldset>
+                                   
+                                      <fieldset class="g-form__input-wrapper">
+                                        <input id="arbitrary-field" name="Произвольное поле" placeholder="Произвольное поле для теста">
+                                      </fieldset>
+                                   
+                                      <fieldset class="g-form__input-wrapper">
+                                        <textarea id="message" name="Сообщение" rows="10"
+                                        placeholder="Введите сообщение"></textarea>
+                                      </fieldset>
+                                   
+                                      <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+                                        <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+                                        <input id="honeypot" type="text" name="honeypot" value="">
+                                      </fieldset>
+                                   
+                                      <div class="g-form__button-wrapper">
+                                        <button class="g-form__button">Получить скидку</button>
+                                      </div>
+                                    </div> -->
+                                  </form>
+                            </div>
+                        </div>
             <div class="questions__wrapper">
                 <div class="container">
                     <div class="questions__list">
@@ -205,31 +260,31 @@
                             Ответы на вопросы
                         </div>
                         <div class="questions__item-1">
-                            <div class="questions__item-title">
-                                Как организовать перевод активов?
-                            </div>
-                            <div class="questions__item-descr">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione <br> eligendi. Nulla explicabo laudantium
+                            
+                               <button class="questions__item-menu">Как организовать перевод активов?</button> 
+                            
+                            <div class="menumenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione eligendi. Nulla explicabo laudantium
                             </div>
                         </div>
                         <div class="questions__item-2">
-                            <div class="questions__item-title">
+                            <button class="questions__item-menu">
                                 В каких странах вы работаете?
-                            </div>
-                            <div class="questions__item-descr">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione <br> eligendi. Nulla explicabo laudantium
+                            </button>
+                            <div class="menumenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione eligendi. Nulla explicabo laudantium
                             </div>
                         </div>
                         <div class="questions__item-3">
-                            <div class="questions__item-title">
+                            <button class="questions__item-menu">
                                 Как сохранить активы в кризис?
-                            </div>
-                            <div class="questions__item-descr">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione <br> eligendi. Nulla explicabo laudantium
+                            </button>
+                            <div class="menumenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione eligendi. Nulla explicabo laudantium
                             </div>
                         </div>
                         <div class="questions__item-4">
-                            <div class="questions__item-title">
+                            <button class="questions__item-menu">
                                 Как выйти на международный рынок?
-                            </div>
-                            <div class="questions__item-descr">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione <br> eligendi. Nulla explicabo laudantium
+                            </button>
+                            <div class="menumenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione eligendi. Nulla explicabo laudantium
                             </div>
                         </div>
                     </div>
@@ -245,17 +300,21 @@
                 </div>
                 <div class="footer__contacts">
                     +374 60 277274
-                    info@landmarkcapital.am
+                    <a href="mailto:info@landmarkcapital.am" class="link__email">info@landmarkcapital.am</a>
                 </div>
                 <div class="footer__adress">
                     Vazgen Sargsyan 10, 118 office, Yerevan, Armenia
                 </div>
                 <div class="footer__button get__client">
-                    <button class="button__client">Стать клиентом</button>
+                    <form action="https://forms.office.com/Pages/ResponsePage.aspx?id=8YDr8_mejEuUMy49M6LDbN-w9XyT_BpAsJTN02xZLvZURE44N0dGNjRLODZCSEdZTERLM0dINE1TNyQlQCN0PWcu" method="get" target="_blank"> <button class="button__client" target="_blank">Стать клиентом</button></form>
+                   
                 </div>
             </div>
         </div>
     </footer>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/g-form.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

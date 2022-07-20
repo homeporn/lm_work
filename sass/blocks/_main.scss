@@ -2,19 +2,30 @@
 .main__wrapper {
     min-height: 900px;
     padding: 180px 0 180px 0;
-    background-image: url(../../img/mainbg.png);
+    background-image: url('../../icons/map.svg');
     background-repeat: no-repeat;
     background-size: 100% 670px;
-    background-position: top 295px right 0px;
+    background-position: top 0 right 0;
 }
 
 .main__title {
     // max-width: 1125px;
     // max-height: 300px;
     margin: 0 auto;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
 }
 
+
 .main__subtitle {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
     font-weight: 300;
     font-size: 38px;
     line-height: 38px;
@@ -22,4 +33,16 @@
     color: #92A4B2;
     margin: 0 auto;
     padding: 43px 0 177px 0;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+    &._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        padding: 90px 0 137px 0;
+    }
+}
+
+.mobile-get-client {
+    display: none;
 }

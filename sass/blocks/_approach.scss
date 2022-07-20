@@ -1,6 +1,6 @@
 .approach__table {
     display: grid;
-    grid-template-columns: 185px 971px 562px;
+    grid-template-columns: 185px 971px;
     grid-template-rows: repeat(3, 317px);
     justify-content: center;
 }
@@ -22,11 +22,11 @@
     color: #F4F7FA;
 }
 
-.approach__descr {
-    border-top: 3px solid #D9D9D9;
-    padding: 25px;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 32px;
-    color: #F4F7FA;
-}
+// .approach__descr {
+//     border-top: 3px solid #D9D9D9;
+//     padding: 25px;
+//     font-weight: 300;
+//     font-size: 32px;
+//     line-height: 32px;
+//     color: #F4F7FA;
+// }

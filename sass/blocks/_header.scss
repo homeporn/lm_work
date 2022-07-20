@@ -1,10 +1,21 @@
+// .menu__wrapper {
+//     margin-top: 40px;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-start;
+//     justify-content: space-between;
+//     background-color: $background;
+// }
+
 .menu__wrapper {
     margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(max-content, max-content, max-content max-content);
+    grid-template-areas: 
+    ". . . .";
+    justify-content: space-around;
     background-color: $background;
+    width: 100%;
 }
 
 .logo__brand {
@@ -16,15 +27,26 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    align-items: center;
     gap: 96px;
+    text-decoration: none;
+    z-index: 1;
 }
 
-.main__title {
-    width: 1125px;
-    height: 300px;
+.hamburger {
+    display: none;
 }
 
-.menu__item a{
+.container__menu {
+    display: none;
+}
+	
+// .main__title {
+//     width: 1125px;
+//     height: 300px;
+// }
+
+.menu__link {
     font-family: 'Euclid Circular A';
     font-style: normal;
     font-weight: 600;
@@ -33,5 +55,18 @@
     text-transform: uppercase;
     color: #F4F7FA;
     text-decoration: none;
-    transition: all 0.5s;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    width: 100%;
+    height: 500px;
+    &:hover {
+        background-size: 100% 2px;
+    }
+
+.get__client {
+    width: 250px;
+}
 }
