@@ -1,0 +1,81 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 40px 0 40px;
+        }
+
+        .menu__wrapper{
+            align-items: center;
+        }
+
+        .logo__brand{
+            width: 165px;
+            height: 66px;
+        }
+    
+        .logo__brand img{
+            width: 150px;
+            height: 66px;
+        }
+    
+        .menu__list {
+            gap: 15px;
+            margin: 0 auto;
+        }
+    
+        .menu__item a{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .lang__list {
+            width: 87px;
+            height: 64px;
+        }
+
+        .get__client {
+            height: 64px;
+        }
+
+        .button__client {
+            padding: 16px 30px;
+            gap: 8px;
+            width: 200px;
+            height: 64px;
+            &:hover {
+                width: 200px;
+                height: 64px;
+            }
+        }
+        
+        .options {
+            grid-template-columns: repeat(2,547px);
+            grid-template-rows: repeat(2,290px);
+        }
+
+        .options__item {
+            width: 566px;
+        }
+
+        .options__item-link {
+            gap: 323px;
+        }
+
+        .main__title h1{
+            font-weight: 300;
+            font-size: 72px;
+            line-height: 72px;
+        }
+
+        .tools__wrapper {
+            min-height: 457px;
+        }
+
+        .tools__item-container{
+            width: 230px;
+            height: 121px;
+        }
+        .approach__table {
+            grid-template-rows: repeat(3,206px);
+        }
+}
