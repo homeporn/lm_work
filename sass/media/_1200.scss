@@ -5,7 +5,7 @@
         }
 
         .menu__wrapper{
-            align-items: center;
+            display: flex;
         }
 
         .logo__brand{
@@ -17,25 +17,27 @@
             width: 150px;
             height: 66px;
         }
-    
+        
+        .lang__list {
+            padding: 16px;
+            width: 80px;
+            height: 66px;
+
+            font-size: 18px;
+            line-height: 18px;
+        }
+
         .menu__list {
             gap: 15px;
-            margin: 0 auto;
-        }
-    
+            margin: 0 auto;;
+            }
+        
+
         .menu__item a{
             font-weight: 600;
             font-size: 16px;
-            line-height: 16px;
-        }
-        .lang__list {
-            width: 87px;
-            height: 64px;
         }
 
-        .get__client {
-            height: 64px;
-        }
 
         .button__client {
             padding: 16px 30px;
@@ -77,5 +79,24 @@
         }
         .approach__table {
             grid-template-rows: repeat(3,206px);
+        }
+
+        .g-form {
+
+            grid-template-columns: 545px 545px;
+        }
+
+        .questions__list {
+            grid-template-columns: 390px 770px;
+        }
+
+        .footer__wrapper {
+            grid-template-columns: 250px 400px 350px 200px;
+        }
+
+        .footer__wrapper {
+            grid-template-columns: 250px 400px 300px 200px;
+            font-size: 28px;
+            line-height: 28px;
         }
 }

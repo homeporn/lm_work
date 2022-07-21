@@ -112,15 +112,9 @@
       
         .active {
         transform: translateX(0);
-            &lang__list {
-                display: block;
             }
-        }
         
-
-        .lang__list {
-        display: none;
-        }
+    
 
         .get__client {
             display: none;
