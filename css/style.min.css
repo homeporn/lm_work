@@ -288,7 +288,8 @@ h1{font-weight:300;font-size:72px;line-height:72px}
 @media (max-width:375px){
 .container{margin:20px 10px 10px 10px;max-width:375px}
 .main__wrapper{padding:0}
-.main__title{margin-top:55px;width:100%}
+.menu__wrapper{margin-top:0}
+.main__title{margin-top:55px;width:100%;font-weight:300;font-size:33px;line-height:33px}
 .main__subtitle{padding:43px 0 61px 0}
 .main__subtitle._active{padding:90px 0 67px 0}
 .options{display:flex;flex-direction:column}

@@ -1,4 +1,5 @@
 @media (max-width: 375px){
+
     .container {
         margin: 20px 10px 10px 10px;
         max-width: 375px;
@@ -8,9 +9,16 @@
         padding: 0;
     }
 
+    .menu__wrapper {
+        margin-top: 0px;
+    }
+
     .main__title {
         margin-top: 55px;
         width: 100%;
+        font-weight: 300;
+        font-size: 33px;
+        line-height: 33px;
     }
     .main__subtitle {
         padding: 43px 0 61px 0;;
@@ -549,6 +557,7 @@
         font-size: 24px;
         line-height: 24px;
     }
+
     .footer__contacts {
         margin: 10px;
     }

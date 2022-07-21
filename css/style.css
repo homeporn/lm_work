@@ -1359,9 +1359,15 @@ h2 {
   .main__wrapper {
     padding: 0; }
 
+  .menu__wrapper {
+    margin-top: 0px; }
+
   .main__title {
     margin-top: 55px;
-    width: 100%; }
+    width: 100%;
+    font-weight: 300;
+    font-size: 33px;
+    line-height: 33px; }
 
   .main__subtitle {
     padding: 43px 0 61px 0; }
