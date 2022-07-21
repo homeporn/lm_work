@@ -438,12 +438,12 @@ h2 {
     background-image: linear-gradient(#418D8B, #0E3848); }
 
 .partners__form-wrapper {
-  min-height: 768px;
-  margin-top: 180px;
+  min-height: 468px;
+  margin-top: 80px;
   background-image: url(../../img/mainbg.png);
   background-repeat: no-repeat;
   background-size: 100% 670px;
-  background-position: top 141px right 0px; }
+  background-position: top 101px right 0px; }
 
 .partners__form-subtitle {
   font-weight: 300;
@@ -580,6 +580,9 @@ h2 {
     .footer__wrappercontactslink__email a {
       text-decoration: none;
       color: white; }
+  .footer__wrapper .footer__contacts {
+    text-decoration: none;
+    color: white; }
   .footer__wrapperbutton {
     margin: 0 auto; }
 
@@ -588,7 +591,11 @@ h2 {
     max-width: 1920px; }
 
   .menu__wrapper {
-    justify-content: space-between; } }
+    justify-content: space-between; }
+
+  .partners__form-wrapper {
+    display: flex;
+    justify-content: center; } }
 @media (max-width: 1440px) {
   .container {
     max-width: 1440px;
@@ -1043,8 +1050,17 @@ h2 {
   .options__item-link {
     gap: 46px; }
 
+  .questions__title {
+    padding-top: 10px; }
+
+  .questions__list {
+    grid-template-columns: 180px 518px; }
+
   .footer__wrapper {
-    grid-template-columns: 250px 200px 250px 200px; } }
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap; } }
 @media (max-width: 576px) {
   .container {
     margin: 20px 10px 10px 10px;
@@ -1148,13 +1164,13 @@ h2 {
     margin-top: 50px; }
 
   .g-form {
-    grid-template-columns: 355px;
+    grid-template-columns: 435px;
     padding: 0;
-    margin-top: 10px;
-    grid-gap: 0; }
+    margin-top: 30px;
+    grid-gap: 35px; }
 
   .partners__form-wrapper {
-    min-height: 570px;
+    min-height: 470px;
     margin-top: 40px; }
 
   .partners__form-submit {
@@ -1298,7 +1314,7 @@ h2 {
     grid-gap: 10px; }
 
   .partners__form-wrapper {
-    min-height: 570px;
+    min-height: 430px;
     margin-top: 40px; }
 
   .partners__form-submit {
@@ -1637,7 +1653,7 @@ h2 {
     grid-gap: 0; }
 
   .partners__form-wrapper {
-    min-height: 570px;
+    min-height: 362px;
     margin-top: 40px; }
 
   .partners__form-submit {
@@ -1788,7 +1804,7 @@ h2 {
     grid-gap: 10px; }
 
   .partners__form-wrapper {
-    min-height: 570px;
+    min-height: 430px;
     margin-top: 40px; }
 
   .partners__form-submit {

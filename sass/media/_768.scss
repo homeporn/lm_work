@@ -153,7 +153,18 @@
         gap: 46px;
     }
 
+    .questions__title {
+        padding-top: 10px;
+    }
+
+    .questions__list {
+        grid-template-columns: 180px 518px;
+    }
+
     .footer__wrapper {
-            grid-template-columns: 250px 200px 250px 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
