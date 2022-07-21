@@ -168,6 +168,8 @@ h2 {
   height: 500px; }
   .menu__link:hover {
     background-size: 100% 2px; }
+  .menu__link .lang__list {
+    display: block; }
   .menu__link .get__client {
     width: 250px; }
 
@@ -335,7 +337,7 @@ h2 {
   min-height: 716px; }
 
 .tools__item {
-  max-height: 885px;
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -405,6 +407,9 @@ h2 {
   font-size: 72px;
   line-height: 72px;
   color: #F4F7FA; }
+
+.number__wrapper {
+  margin-top: 80px; }
 
 .numbers__list {
   margin-top: 76px;
@@ -535,7 +540,7 @@ h2 {
     float: right;
     margin-left: 5px; }
 
-.active:after {
+.active_q:after {
   content: url("../../icons/arrowdown.svg");
   transform: rotate(90deg);
   transition: all 0.5s;
@@ -693,7 +698,7 @@ h2 {
     margin: 0 40px 0 40px; }
 
   .menu__wrapper {
-    align-items: center; }
+    display: flex; }
 
   .logo__brand {
     width: 165px;
@@ -703,21 +708,20 @@ h2 {
     width: 150px;
     height: 66px; }
 
+  .lang__list {
+    padding: 16px;
+    width: 80px;
+    height: 66px;
+    font-size: 18px;
+    line-height: 18px; }
+
   .menu__list {
     gap: 15px;
     margin: 0 auto; }
 
   .menu__item a {
     font-weight: 600;
-    font-size: 16px;
-    line-height: 16px; }
-
-  .lang__list {
-    width: 87px;
-    height: 64px; }
-
-  .get__client {
-    height: 64px; }
+    font-size: 16px; }
 
   .button__client {
     padding: 16px 30px;
@@ -751,17 +755,29 @@ h2 {
     height: 121px; }
 
   .approach__table {
-    grid-template-rows: repeat(3, 206px); } }
+    grid-template-rows: repeat(3, 206px); }
+
+  .g-form {
+    grid-template-columns: 545px 545px; }
+
+  .questions__list {
+    grid-template-columns: 390px 770px; }
+
+  .footer__wrapper {
+    grid-template-columns: 250px 400px 350px 200px; }
+
+  .footer__wrapper {
+    grid-template-columns: 250px 400px 300px 200px;
+    font-size: 28px;
+    line-height: 28px; } }
 @media (max-width: 991px) {
   .container {
     max-width: 991px;
     margin: 0 40px 0 40px; }
 
   .menu__wrapper {
-    grid-template-columns: minmax(max-content max-content);
-    grid-template-rows: repeat(2, 60px);
-    grid-template-areas: ". ." ". .";
-    justify-items: space-between; }
+    display: flex;
+    flex-wrap: wrap; }
 
   .logo__brand {
     width: 165px;
@@ -772,28 +788,26 @@ h2 {
     height: 66px; }
 
   .menu__list {
-    gap: 15px;
+    gap: 10px;
     margin: 0 auto; }
 
   .menu__item a {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px; }
 
   .lang__list {
-    width: 90px;
-    height: 64px; }
+    width: 80px;
+    height: 44px; }
 
   .get__client {
-    height: 64px;
-    display: flex;
-    justify-content: flex-end; }
+    height: 64px; }
 
   .button__client {
     padding: 16px 30px;
     gap: 8px;
-    width: 200px;
-    height: 64px; }
+    width: 120px;
+    height: 44px; }
     .button__client:hover {
       width: 200px;
       height: 64px; }
@@ -859,6 +873,9 @@ h2 {
     line-height: 72px;
     color: #F4F7FA; }
 
+  .number__wrapper {
+    margin-top: 60px; }
+
   .numbers__list {
     margin-top: 56px;
     display: flex;
@@ -902,7 +919,7 @@ h2 {
     border: none;
     grid-template-columns: 430px 430px;
     grid-template-rows: max-content max-content;
-    justify-content: flex-start; }
+    justify-content: center; }
 
   .footer__contacts {
     font-size: 24px;
@@ -1014,11 +1031,6 @@ h2 {
 
   .active {
     transform: translateX(0); }
-    .activelang__list {
-      display: block; }
-
-  .lang__list {
-    display: none; }
 
   .get__client {
     display: none; }

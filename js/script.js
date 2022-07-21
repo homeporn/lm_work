@@ -68,7 +68,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
+        this.classList.toggle("active_q");
         var menumenu = this.nextElementSibling;
         if (menumenu.style.maxHeight) {
           menumenu.style.maxHeight = null;

@@ -4,12 +4,8 @@
         margin: 0 40px 0 40px;
     }
     .menu__wrapper{
-        grid-template-columns: minmax(max-content max-content);
-        grid-template-rows: repeat(2, 60px);
-        grid-template-areas: 
-        ". ."
-        ". ."; 
-        justify-items: space-between;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .logo__brand{
@@ -23,31 +19,29 @@
     }
 
     .menu__list {
-        gap: 15px;
+        gap: 10px;
         margin: 0 auto;
     }
 
     .menu__item a{
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 16px;
     }
     .lang__list {
-        width: 90px;
-        height: 64px;
+        width: 80px;
+        height: 44px;
     }
 
     .get__client {
         height: 64px;
-        display: flex;
-        justify-content: flex-end;
     }
 
     .button__client {
         padding: 16px 30px;
         gap: 8px;
-        width: 200px;
-        height: 64px;
+        width: 120px;
+        height: 44px;
         &:hover {
             width: 200px;
             height: 64px;
@@ -128,6 +122,11 @@
         line-height: 72px;
         color: #F4F7FA;
     }
+
+    .number__wrapper {
+        margin-top: 60px;
+    }
+
     .numbers__list {
         margin-top: 56px;
         display: flex;
@@ -176,7 +175,7 @@
         border: none;
         grid-template-columns: 430px 430px;
         grid-template-rows: max-content max-content;
-        justify-content: flex-start;
+        justify-content: center;
     }
     .footer__contacts {
         font-size: 24px;
