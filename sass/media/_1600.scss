@@ -1,0 +1,9 @@
+@media (max-width:1600px) {
+    .container {
+        max-width: 1440px;
+        margin: 0;
+    }
+    .questions__list {
+        grid-template-columns: 390px 770px;
+    }
+}

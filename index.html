@@ -27,7 +27,6 @@
 </head>
 <body>
     <header>
-        <nav class="nav__menu">
             <div class="container">
                 <div class="menu__wrapper">
                     <div class="logo__brand"><img class="logo__size" src="icons/logo/mainlogo.svg" alt="Landmark"></div>
@@ -45,27 +44,23 @@
                             <li class="menu__item"><a class="menu__link" href="#">Регулирование</a></li>
                             <li class="menu__item"><a class="menu__link" href="#">Аналитика</a></li>
                             <li class="menu__item">
-                                <div>
-                                    <select name="language" id="lang" class="lang__list">
-                                    <option value="RU" class="lang__item">RU</option>
-                                    <option value="AM" class="lang__item">AM</option>
-                                    <option value="US" class="lang__item">US</option>
-                                </select>
-                            </div>
+                                <div class="dropdown">
+                                    <div class="select">
+                                      <div class="selected">RU</div>
+                                      <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                      <li>ENG</li>
+                                      <li>AM</li>
+                                      <li class="active-menu">RU</li>
+                                    </ul>
+                                  </div>
                             </li>
                             <li class="menu__item"><button class="button__client" action="https://forms.office.com/Pages/ResponsePage.aspx?id=8YDr8_mejEuUMy49M6LDbN-w9XyT_BpAsJTN02xZLvZURE44N0dGNjRLODZCSEdZTERLM0dINE1TNyQlQCN0PWcu">Открыть счёт</button></li>
                         </ul>
-
-
-                    <!-- <select name="language" id="lang" class="lang__list">
-                        <option value="RU" class="lang__item">RU</option>
-                        <option value="AM" class="lang__item">AM</option>
-                        <option value="US" class="lang__item">US</option>
-                    </select>
-                    <div class="get__client"><button class="button__client" action="https://forms.office.com/Pages/ResponsePage.aspx?id=8YDr8_mejEuUMy49M6LDbN-w9XyT_BpAsJTN02xZLvZURE44N0dGNjRLODZCSEdZTERLM0dINE1TNyQlQCN0PWcu">Открыть счёт</button></div> -->
+                      </div>
                 </div>
             </div>
-        </nav>
     </header>
 
     <main>
@@ -223,30 +218,53 @@
                         </div>
                         <div class="questions__item-1">
                             
-                               <button class="questions__item-menu">Как организовать перевод активов?</button> 
+                               <button class="questions__item-menu">Какие ценные бумаги и на каких рынках я могу покупать?</button> 
                             
-                            <div class="menumenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione eligendi. Nulla explicabo laudantium
+                            <div class="menumenu">C Landmark Capital вы можете покупать любые ценные бумаги на любых рынках: привилегированные и обыкновенные акции, структурные продукты. Вы можете участвовать в пре-IPO и инвестировать в сектор real estate. Подробнее об этом вы можете прочитать в разделе «услуги».
                             </div>
                         </div>
                         <div class="questions__item-2">
                             <button class="questions__item-menu">
-                                В каких странах вы работаете?
+                                В каких депозитариях у вас открыты счета?
                             </button>
-                            <div class="menumenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione eligendi. Nulla explicabo laudantium
+                            <div class="menumenu">Landmark Capital имеет счета в Euroclear, ClearStream и в НРД.
                             </div>
                         </div>
                         <div class="questions__item-3">
                             <button class="questions__item-menu">
-                                Как сохранить активы в кризис?
+                                Как регулируется ваша деятельность? Есть ли у вас лицензия на осуществление брокерской деятельности?
                             </button>
-                            <div class="menumenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione eligendi. Nulla explicabo laudantium
+                            <div class="menumenu">Деятельность компании регулируется Центральным банком Армении. Ознакомиться с регуляторными документами вы можете в разделе «Документы».
                             </div>
                         </div>
                         <div class="questions__item-4">
                             <button class="questions__item-menu">
-                                Как выйти на международный рынок?
+                                Можно ли перевести ценные бумаги от другого брокера к вам?
                             </button>
-                            <div class="menumenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos incidunt non unde qui, voluptatibus ratione eligendi. Nulla explicabo laudantium
+                            <div class="menumenu">
+                                <p>Вы можете оформить перевод ценных бумаг от другого брокера в Landmark Capital. Для этого вам достаточно открыть счёт в Landmark Capital и подать параллельно два депозитарных поручения: одно своему прежнему брокеру, второе в Landmark Capital.</p>
+                                <p>Способы подачи поручения зависят от типа перевода бумаги и места хранения. Оставьте заявку на консультацию, и мы поможем вам организовать перевод.</p>
+                            </div>
+                        </div>
+                        <div class="questions__item-5">
+                            <button class="questions__item-menu">
+                                Могу ли я перевести/купить ценные бумаги на счёт организации/фонда или третьего лица?
+                            </button>
+                            <div class="menumenu">Да, это возможно, подробнее об этом вы можете прочитать в разделе «брокерские услуги».
+                            </div>
+                        </div>
+                        <div class="questions__item-6">
+                            <button class="questions__item-menu">
+                                Могу ли я претендовать на дивиденды относительно заблокированных бумаг?
+                            </button>
+                            <div class="menumenu">Доходы в виде купонов/дивидендов учитываются и будут распределяться владельцам, после перевода или конвертации ценных бумаг. 
+                            </div>
+                        </div>
+                        <div class="questions__item-7">
+                            <button class="questions__item-menu">
+                                По какому курсу происходит конвертация ценных бумаг?
+                            </button>
+                            <div class="menumenu">Она происходит по текущему биржевому курсу на дату совершения сделки. 
                             </div>
                         </div>
                     </div>

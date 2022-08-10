@@ -1,21 +1,11 @@
-// .menu__wrapper {
-//     margin-top: 40px;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: flex-start;
-//     justify-content: space-between;
-//     background-color: $background;
-// }
-
 .menu__wrapper {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: minmax(max-content, max-content, max-content max-content);
+    grid-template-columns: minmax(max-content, max-content);
     grid-template-areas: 
-    ". . . .";
-    justify-content: space-around;
+    ". .";
+    justify-content: space-between;
     background-color: $background;
-    width: 100%;
 }
 
 .logo__brand {
@@ -40,11 +30,6 @@
 .container__menu {
     display: none;
 }
-	
-// .main__title {
-//     width: 1125px;
-//     height: 300px;
-// }
 
 .menu__link {
     font-family: 'Euclid Circular A';
@@ -65,12 +50,10 @@
     &:hover {
         background-size: 100% 2px;
     }
+    
 
-    .lang__list {
-        display: block;
-    }
 
 .get__client {
     width: 250px;
-}
+    }
 }

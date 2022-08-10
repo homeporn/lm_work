@@ -1,6 +1,5 @@
 @media (max-width:576px){
     .container {
-        margin: 20px 10px 10px 10px;
         max-width: 576px;
     }
     .main__title {
@@ -142,6 +141,13 @@
         font-weight: 300;
         font-size: 38px;
         line-height: 38px;
+    }
+
+    .questions__item-1, .questions__item-2, .questions__item-3, .questions__item-4, .questions__item-5, .questions__item-6, .questions__item-7 {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid gray;
+        padding: 5px;
     }
 
     .footer__wrapper {

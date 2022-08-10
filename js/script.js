@@ -1,21 +1,3 @@
-// function drop() {
-//     document.getElementById("langDropdown").classList.toggle("show");
-// }
-
-// window.onclick = function(event) {
-//   if (!event.target.matches('.button__dropdown')) {
-
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// };
-
 var hamburger = document.querySelector('.hamburger');
 var menu__list = document.querySelector('.menu__list');
 
@@ -77,4 +59,45 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+  //Get inner elements from each dropdown
+  const select = dropdown.querySelector('.select');
+  const caret = dropdown.querySelector('.caret');
+  const menu = dropdown.querySelector('.menu');
+  const options = dropdown.querySelectorAll('.menu li');
+  const selected = dropdown.querySelector('.selected');
+
+  select.addEventListener('click', () => {
+    //Add the clicked select styles to the select element
+    select.classList.toggle('select-clicked');
+    //Add the rotate styles to the caret element
+    caret.classList.toggle('caret-rotate');
+    //Add the open styles to the menu element
+    menu.classList.toggle('menu-open');
+  });
+  
+  options.forEach(option => {
+
+    option.addEventListener('click', () => {
+
+      selected.innerText = option.innerText;
+
+      select.classList.remove('select-clicked');
+
+      caret.classList.remove('caret-rotate');
+
+      menu.classList.remove('menu-open');
+
+      options.forEach(option => {
+        option.classList.remove('active-menu');
+      });
+
+      option.classList.add('active-menu');
+    });
+  });
+});
+
 

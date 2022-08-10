@@ -1,7 +1,7 @@
 @media (max-width: 1200px) {
     .container {
-        max-width: 1200px;
-        margin: 0 40px 0 40px;
+        max-width: 970px;
+        margin: 0 auto;
         }
 
         .menu__wrapper{
@@ -51,16 +51,17 @@
         }
         
         .options {
-            grid-template-columns: repeat(2,547px);
-            grid-template-rows: repeat(2,290px);
+            grid-template-columns: repeat(2,510px);
+            grid-template-rows: repeat(2,320px);
+            grid-gap: 20px;
         }
 
         .options__item {
-            width: 566px;
+            width: 490px;
         }
 
         .options__item-link {
-            gap: 323px;
+            gap: 187px;
         }
 
         .main__title h1{
