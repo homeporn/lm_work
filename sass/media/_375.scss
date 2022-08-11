@@ -39,14 +39,16 @@
     .options__item {
         width: 355px;
         height: 291px;
+        padding: 20px 50px 0px 20px;
         &-title {
             font-size: 24px;
             line-height: 24px;
         }
     }
+
     .options__item-link {
         width: 100%;
-        height: 76px;
+        height: 50px;
         position: relative;
     }
     .more__arrow {
@@ -195,11 +197,7 @@
     }
 
     .g-form {
-        grid-template-columns: 355px;
-        grid-template-rows: repeat(4,90px);
-        padding: 0;
-        margin-top: 10px;
-        grid-gap: 0;
+        gap: 30px;
     }
 
     .g-form__button {
@@ -233,15 +231,24 @@
     }
 
     .footer__wrapper {
+        border-top: none;
+        padding-top: 0;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         font-weight: 300;
         font-size: 24px;
         line-height: 24px;
+        gap: 11px;
     }
+
     .footer__contacts {
         margin: 10px;
+    }
+
+    .link__email {
+        color: #f4f7fa;
+        padding-left: 0px;
     }
 
     .footer__adress{
@@ -251,343 +258,7 @@
         display: block;
         margin: 10px;
     }
+    .logo__brand img {
+        width: 200px;
+    }
 }
-
-// @media (max-width: 375px){
-//     .container {
-//         margin: 20px 10px 10px 10px;
-//         max-width: 375px;
-//     }
-//     .main__title {
-//         width: 100%;
-//     }
-//     .main__subtitle {
-//         padding: 43px 0 61px 0;;
-//     }
-
-//     .options {
-//         display: flex;
-//         flex-direction: column;
-//     }
-
-//     .options__item {
-//         width: 355px;
-//         height: 291px;
-//         &-title {
-//             font-size: 24px;
-//             line-height: 24px;
-//         }
-//     }
-//     .options__item-link {
-//         width: 100%;
-//         height: 76px;
-//     }
-//     .more__arrow {
-//         height: 20px;
-//     }
-//     .markets__title h2 {
-//         height: 130px;
-//         width: 100%;
-//         font-size: 38px;
-//         line-height: 38px;
-//     }
-//     .mobile-get-client {
-//         padding: 0;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 16px;
-//     }
-//     .hamburger {
-//         padding: 0;
-//     }
-//     .markets__wrapper {
-//         padding: 0;
-//     }
-
-//     .markets__map img {
-//         height: 147px;
-//     }
-
-//     .tools__wrapper {
-//         height: auto;
-//     }
-
-//     .tools__title {
-//         margin: 37px;
-//     }
-//     .tools__item-container {
-//         width: 100%;
-//         height: 40px;
-//     }
-
-//     .tools__item-subtitle {
-//         padding: 7px;
-//     }
-
-//     .approach__table {
-//         grid-template-columns: 100px 270px;
-//         grid-template-rows: 391px;
-//     }
-//     .approach__number {
-//         padding-left: 0;
-//         padding-bottom: 0;
-//         font-weight: 300;
-//         font-size: 32px;
-//         line-height: 32px;
-//     }
-//     .approach__title {
-//         padding-left: 0;
-//         padding-top: 5px;
-//         padding-right: 0;
-//         border: 0;
-//         font-weight: 300;
-//         font-size: 32px;
-//         line-height: 32px;
-//     }
-//     .approach__descr {
-//         padding-left: 0;
-//         border: 0;
-//         padding-right: 0;
-//         font-weight: 300;
-//         font-size: 24px;
-//         line-height: 24px;
-//     }
-
-//     .numbers__list {
-//         margin-top: 0;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//     }
-//     .numbers__item-line {
-//         position: relative;
-//         margin-top: 50px;
-//     }
-
-//     .g-form {
-//         grid-template-columns: 355px;
-//         padding: 0;
-//         margin-top: 10px;
-//         grid-gap: 0;
-//     }
-
-//     .partners__form-wrapper {
-//         min-height: 362px;
-//         margin-top: 40px;
-//     }
-//     .partners__form-submit {
-//         height: 56px;
-//         margin-top: 40px;
-//     }
-
-//     .form__input {
-//         height: 56px;
-//     }
-
-//     .questions__list {
-//         display: flex;
-//         flex-direction: column;
-//     }
-    
-//     .questions__title {
-//         text-align: center;
-//         font-weight: 300;
-//         font-size: 38px;
-//         line-height: 38px;
-//     }
-
-//     .footer__wrapper {
-//         display: flex;
-//         flex-direction: column-reverse;
-//         justify-content: space-between;
-//         font-weight: 300;
-//         font-size: 24px;
-//         line-height: 24px;
-//     }
-//     .footer__contacts {
-//         margin: 10px;
-//     }
-
-//     .footer__adress{
-//         margin: 10px;
-//     }
-//     .footer__button {
-//         display: block;
-//         margin: 10px;
-//     }
-// }
-
-// @media (max-width: 390px) {
-//     .container {
-//         margin: 20px 10px 10px 10px;
-//         max-width: 390px;
-//     }
-
-//     .main__title {
-//         width: 100%;
-//     }
-//     .main__subtitle {
-//         padding: 43px 0 61px 0;;
-//     }
-
-//     .options {
-//         display: flex;
-//         flex-direction: column;
-//     }
-
-//     .options__item {
-//         width: 355px;
-//         height: 291px;
-//         &-title {
-//             font-size: 24px;
-//             line-height: 24px;
-//         }
-//     }
-//     .options__item-link {
-//         width: 100%;
-//         height: 76px;
-//     }
-//     .more__arrow {
-//         height: 20px;
-//     }
-//     .markets__title h2 {
-//         height: 130px;
-//         width: 100%;
-//         font-size: 38px;
-//         line-height: 38px;
-//     }
-//     .mobile-get-client {
-//         padding: 0;
-//         font-weight: 600;
-//         font-size: 16px;
-//         line-height: 16px;
-//     }
-//     .hamburger {
-//         padding: 0;
-//     }
-//     .markets__wrapper {
-//         padding: 0;
-//     }
-
-//     .markets__map img {
-//         height: 147px;
-//     }
-
-//     .tools__wrapper {
-//         min-height: auto;
-//     }
-
-//     .tools__title {
-//         margin: 37px;
-//     }
-//     .tools__item-container {
-//         width: 100%;
-//         height: 40px;
-//     }
-
-//     .tools__item-subtitle {
-//         padding: 7px;
-//     }
-
-//     .approach__table {
-//         display: block;
-//         // grid-template-columns: 370px;
-//         // grid-template-rows: 391px;
-//     }
-//     .approach__number {
-//         padding-left: 0;
-//         padding-bottom: 0;
-//         font-weight: 300;
-//         font-size: 32px;
-//         line-height: 32px;
-//     }
-//     .approach__title {
-//         padding-left: 0;
-//         padding-top: 5px;
-//         padding-right: 0;
-//         border: 0;
-//         font-weight: 300;
-//         font-size: 32px;
-//         line-height: 32px;
-//     }
-//     .approach__descr {
-//         padding-left: 0;
-//         border: 0;
-//         padding-right: 0;
-//         font-weight: 300;
-//         font-size: 24px;
-//         line-height: 24px;
-//     }
-//     .numbers__item-title {
-//         font-size: 150px;
-//         line-height: 200px;
-//         text-align: center;
-//         letter-spacing: -.04em;
-//         color: #fff;
-//     }
-
-//     .numbers__list {
-//         margin-top: 0;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//     }
-//     .numbers__item-line {
-//         position: relative;
-//         margin-top: 50px;
-//     }
-
-//     .g-form {
-//         grid-template-columns: 355px;
-//         padding: 0;
-//         margin-top: 10px;
-//         grid-gap: 10px;
-//     }
-
-//     .partners__form-wrapper {
-//         min-height: 430px;
-//         margin-top: 40px;
-//     }
-
-//     .partners__form-submit {
-//         height: 56px;
-//         margin-top: 40px;
-//     }
-
-//     .form__input {
-//         height: 56px;
-//     }
-
-//     .questions__list {
-//         display: flex;
-//         flex-direction: column;
-//     }
-    
-//     .questions__title {
-//         text-align: center;
-//         font-weight: 300;
-//         font-size: 38px;
-//         line-height: 38px;
-//     }
-
-//     .footer__wrapper {
-//         display: flex;
-//         flex-direction: column-reverse;
-//         justify-content: space-between;
-//         font-weight: 300;
-//         font-size: 24px;
-//         line-height: 24px;
-//     }
-
-//     .footer__contacts {
-//         margin: 10px;
-//     }
-
-//     .footer__adress{
-//         margin: 10px;
-//     }
-//     .footer__button {
-//         display: block;
-//         margin: 10px;
-//     }
-// }

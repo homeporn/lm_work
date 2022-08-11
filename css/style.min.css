@@ -297,9 +297,9 @@ h1{font-weight:300;font-size:72px;line-height:72px}
 .main__subtitle{padding:43px 0 61px 0}
 .main__subtitle._active{padding:90px 0 67px 0}
 .options{display:flex;flex-direction:column}
-.options__item{width:355px;height:291px}
+.options__item{width:355px;height:291px;padding:20px 50px 0 20px}
 .options__item-title{font-size:24px;line-height:24px}
-.options__item-link{width:100%;height:76px;position:relative}
+.options__item-link{width:100%;height:50px;position:relative}
 .more__arrow{top:5px;left:265px;height:30px}
 .markets__title h2{height:130px;width:100%;font-size:38px;line-height:38px}
 .mobile-get-client{padding:0;font-weight:600;font-size:16px;line-height:16px}
@@ -326,15 +326,17 @@ h1{font-weight:300;font-size:72px;line-height:72px}
 .numbers__item-title{font-size:100px;line-height:100px}
 .numbers__list{margin-top:0;display:flex;flex-direction:column;align-items:center}
 .numbers__item-line{position:relative;margin-top:50px}
-.g-form{grid-template-columns:355px;grid-template-rows:repeat(4,90px);padding:0;margin-top:10px;grid-gap:0}
+.g-form{gap:30px}
 .g-form__button{height:56px}
 .partners__form-wrapper{max-height:570px;margin-top:40px}
 .partners__form-submit{height:56px;margin-top:40px}
 .form__input{height:56px}
 .questions__list{display:flex;flex-direction:column}
 .questions__title{text-align:center;font-weight:300;font-size:38px;line-height:38px}
-.footer__wrapper{display:flex;flex-direction:column-reverse;justify-content:space-between;font-weight:300;font-size:24px;line-height:24px}
+.footer__wrapper{border-top:none;padding-top:0;display:flex;flex-direction:column-reverse;justify-content:space-between;font-weight:300;font-size:24px;line-height:24px;gap:11px}
 .footer__contacts{margin:10px}
+.link__email{color:#f4f7fa;padding-left:0}
 .footer__adress{margin:10px}
 .footer__button{display:block;margin:10px}
+.logo__brand img{width:200px}
 }
