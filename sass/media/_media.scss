@@ -4,6 +4,7 @@
         margin: 0 auto;
     }
     .menu__wrapper {
+        width: 100%;
         justify-content: space-between;
     }
     .menu__list {
@@ -14,10 +15,10 @@
         justify-content: center;
     }
 }
+
 @import '1600';
 @import '1440';
 @import '1200';
-@import '991';
 @import '768';
 @import '576';
 @import '390';

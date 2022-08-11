@@ -49,7 +49,7 @@
 
 .questions__item-menu {
     text-align: left;
-    padding: 18px;
+    padding: 18px 18px 18px 0px;
     width: 100%;
     font-weight: 300;
     font-size: 24px;
@@ -74,7 +74,7 @@
 .active_q {
     &:after {
         content: url('../../icons/arrowdown.svg');
-        transform: rotate(90deg);
+        transform: rotate(180deg);
         transition: all 0.5s;
         width: 11px;
         color: #777;

@@ -1,5 +1,6 @@
 .dropdown {
     width: 120px;
+    height: 80px;
     position: relative;
   }
   
@@ -7,6 +8,7 @@
     background: transparent;
     color: #F4F7FA;
     display: flex;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
     border: 2px $button solid;
@@ -19,10 +21,10 @@
     text-transform: uppercase;
   }
 
-  .select-clicked {
-    border: 2px $button solid;
-    box-shadow: 0 0 0.8em $button;
-  }
+  // .select-clicked {
+  //   // border: 2px $button solid;
+  //   // box-shadow: 0 0 0.8em $button;
+  // }
   
   .select:hover {
     background: $button;

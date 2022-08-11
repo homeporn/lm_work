@@ -1,6 +1,6 @@
 @media (max-width: 1440px) {
     .container {
-        max-width: 1280px;
+        max-width: 1200px;
         margin: 0 auto;
         }
     h1 {
@@ -24,7 +24,7 @@
     }
 
     .menu__list {
-        gap: 17px;
+        gap: 12px;
         margin: 0 auto;
     }
 
@@ -60,21 +60,31 @@
     }
     .options {
         display: grid;
-        grid-template-columns: repeat(2, 670px);
-        grid-template-rows: repeat(2, 307px);
+        grid-template-columns: repeat(2, 590px);
+        grid-template-rows: repeat(2, 300px);
         grid-auto-flow: row;
         grid-gap: 20px;
     }
+
     .options__item {
-        width: 670px;
+        width: 100%;
+        height: 100%;
     }
-    .options__item-link {
-        gap: 400px;
+
+    .more__arrow {
+        position: absolute;
+        height: 34px;
+        top: -10px;
+        left: 475px;
     }
 
     .markets__title h2 {
         font-size: 38px;
         line-height: 38px;
+    }
+
+    .tools__wrapper {
+        min-height: 576px;
     }
 
     .tools__item-container{
@@ -92,15 +102,27 @@
     .approach__table {
         display: grid;
         grid-template-columns: 97px 611px;
+        grid-template-rows: repeat(3,220px);
+    }
+
+    .number__wrapper {
+        margin-top: 40px;
     }
 
     .numbers__list {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 350px);
     }
 
     .questions__list {
-        grid-template-columns: 590px 770px;
+        grid-template-columns: 341px 730px;
+    }
+
+    .questions__title {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 54px;
+        color: #f4f7fa;
     }
 
     .footer__wrapper {

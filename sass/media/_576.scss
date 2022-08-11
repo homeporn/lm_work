@@ -24,13 +24,20 @@
             line-height: 24px;
         }
     }
+
     .options__item-link {
+        position: relative;
         width: 100%;
         height: 76px;
     }
-    .more__arrow {
-        height: 20px;
-    }
+
+        .more__arrow {
+            position: absolute;
+            height: 34px;
+            top: -9px;
+            left: 240px;
+        }
+
     .markets__title h2 {
         height: 130px;
         width: 100%;

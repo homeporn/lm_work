@@ -1,8 +1,7 @@
-@media (max-width: 390px) {
-
+@media (max-width: 420px) {
     .container {
+        max-width: 420px;
         margin: 20px 10px 10px 10px;
-        max-width: 375px;
     }
 
     .main__title {
@@ -115,9 +114,18 @@
 
     .g-form {
         grid-template-columns: 320px;
+        grid-template-rows: 60px 60px 60px 60px;
         padding: 0;
         margin-top: 10px;
         grid-gap: 10px;
+    }
+
+    .block__title {
+        max-height: 40px;
+    }
+
+    .g-form__button {
+        height: 56px;
     }
 
     .partners__form-wrapper {
