@@ -1,0 +1,163 @@
+.services__title {
+    // max-width: 1125px;
+    // max-height: 300px;
+    margin: 0 auto;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.services__item-container {
+    max-width: 100%;
+    max-height: 429px;
+    padding: 50px;
+    opacity: 0.8;
+    left: 81px;
+    top: 80px;
+    &:nth-child(1){
+        background: url(../img/gradient/Polygon_1.png)#377472;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+    }
+}
+    &:nth-child(2){
+        background:url(../img/gradient/Polygon_2.png) #13485C;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+    }
+}
+    &:nth-child(3){
+        background:url(../img/gradient/Polygon_3.png)#3A4352;;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-y: 145px;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+    }
+}
+    &:nth-child(4){
+        background:url(../img/gradient/Polygon_4.png)#19333D;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-y: -60px;
+        background-position-x: -707px;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+    }
+}
+    &:nth-child(5){
+        background:url(../img/gradient/Polygon_4.png)#13485C;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+    }
+}
+    &:nth-child(6){
+        background: url(../img/gradient/Polygon_1.png)#377472;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+    }
+}
+    &:nth-child(7){
+        background:url(../img/gradient/Polygon_3.png) #3A4352;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-y: 145px;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+    }
+}
+    &:nth-child(8){
+        background:url(../img/gradient/Polygon_2.png)#19333D;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+
+    }
+}
+    &:nth-child(9){
+        background:url(../img/gradient/Polygon_1.png) #377472;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+}
+
+    .services__item-title {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 32px;
+        color: #F4F7FA;
+    }
+    .services__item-descr {
+        padding-top: 30px;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 22px;
+        color: #D5DFE6;
+    }
+
+    .container__button {
+        display: flex;
+        justify-content: center;
+        padding: 58px 0 157px 0;
+        margin: 0 auto;
+    }
