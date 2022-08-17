@@ -118,12 +118,12 @@ h2{font-family:'Euclid Circular A';font-style:normal;font-weight:300;font-size:1
 .services__title{margin:0 auto;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
 .services__title._active{transform:translate(0,0);opacity:1;padding-top:180px;padding-bottom:180px}
 .services{display:flex;flex-direction:column;gap:50px}
-.services__item-container{max-width:100%;max-height:429px;padding:50px;opacity:.8;left:81px;top:80px}
-.services__item-container:nth-child(1){background:url(../img/gradient/Polygon_1.png) #377472;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
+.services__item-container{max-width:100%;max-height:429px;padding:50px;left:81px;top:80px}
+.services__item-container:nth-child(1){background:url(../img/gradient/Polygon_1.png) #377472;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .3s ease 0s}
 .services__item-container:nth-child(1)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(2){background:url(../img/gradient/Polygon_2.png) #13485c;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
+.services__item-container:nth-child(2){background:url(../img/gradient/Polygon_2.png) #13485c;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .3s ease 0s}
 .services__item-container:nth-child(2)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(3){background:url(../img/gradient/Polygon_3.png) #3a4352;background-repeat:no-repeat;background-size:100% 100%;background-position-y:145px;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
+.services__item-container:nth-child(3){background:url(../img/gradient/Polygon_3.png) #3a4352;background-repeat:no-repeat;background-size:100% 100%;background-position-y:145px;transform:translate(0,120%);opacity:0;transition:all .3s ease 1s}
 .services__item-container:nth-child(3)._active{transform:translate(0,0);opacity:1}
 .services__item-container:nth-child(4){background:url(../img/gradient/Polygon_4.png) #19333d;background-repeat:no-repeat;background-size:100% 100%;background-position-y:-60px;background-position-x:-707px;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
 .services__item-container:nth-child(4)._active{transform:translate(0,0);opacity:1}
@@ -242,6 +242,12 @@ h1{font-weight:300;font-size:72px;line-height:72px}
 .questions__list{grid-template-columns:180px 518px}
 .footer__wrapper{display:flex;justify-content:center;flex-direction:row;flex-wrap:wrap;flex-direction:column-reverse;gap:30px}
 .link__email{color:#f4f7fa;padding-left:30px}
+.services__title{margin:0 auto;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
+.services__title._active{transform:translate(0,0);opacity:1;padding-top:20px;padding-bottom:20px}
+.services__item-container{max-width:100%;max-height:100%}
+.services__item-title{font-weight:300;font-size:22px;line-height:32px;color:#f4f7fa}
+.services__item-descr{padding-top:30px;font-weight:300;font-size:18px;line-height:22px;color:#d5dfe6}
+.container__button{display:flex;justify-content:center;padding:58px 0 50px 0}
 }
 @media (max-width:576px){
 .container{max-width:576px}

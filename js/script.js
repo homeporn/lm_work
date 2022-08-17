@@ -42,7 +42,7 @@ if (animItems.length > 0) {
   setTimeout(() => {
     animOnScroll();
   }, 300);
-  
+
 }
 
 var acc = document.getElementsByClassName("questions__item-menu");
@@ -78,7 +78,7 @@ dropdowns.forEach(dropdown => {
     //Add the open styles to the menu element
     menu.classList.toggle('menu-open');
   });
-  
+
   options.forEach(option => {
 
     option.addEventListener('click', () => {

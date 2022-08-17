@@ -23,7 +23,6 @@
     max-width: 100%;
     max-height: 429px;
     padding: 50px;
-    opacity: 0.8;
     left: 81px;
     top: 80px;
     &:nth-child(1){
@@ -32,7 +31,7 @@
         background-size: 100% 100%;
         transform: translate(0px, 120%);
         opacity: 0;
-        transition: all 0.8s ease 0s;
+        transition: all 0.3s ease 0s;
         &._active{
             transform: translate(0px, 0px);
             opacity: 1;
@@ -44,7 +43,7 @@
         background-size: 100% 100%;
         transform: translate(0px, 120%);
         opacity: 0;
-        transition: all 0.8s ease 0s;
+        transition: all 0.3s ease 0s;
         &._active{
             transform: translate(0px, 0px);
             opacity: 1;
@@ -57,7 +56,7 @@
         background-position-y: 145px;
         transform: translate(0px, 120%);
         opacity: 0;
-        transition: all 0.8s ease 0s;
+        transition: all 0.3s ease 1s;
         &._active{
             transform: translate(0px, 0px);
             opacity: 1;

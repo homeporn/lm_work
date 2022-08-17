@@ -196,4 +196,43 @@
         color: #f4f7fa;
         padding-left: 30px;
     }
+
+    .services__title {
+        // max-width: 1125px;
+        // max-height: 300px;
+        margin: 0 auto;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+        &._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .services__item-container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .services__item-title {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+        color: #F4F7FA;
+    }
+    .services__item-descr {
+        padding-top: 30px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #D5DFE6;
+    }
+
+    .container__button {
+        display: flex;
+        justify-content: center;
+        padding: 58px 0 50px 0;
+    }
 }
