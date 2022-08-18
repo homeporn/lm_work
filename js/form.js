@@ -2,10 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('g-form');
-    if(form){
-        form.addEventListener('submit', formSend);
-    }
-
+    form.addEventListener('submit', formSend);
 
     async function formSend(e) {
         e.preventDefault();
