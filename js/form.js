@@ -2,7 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('g-form');
-    form.addEventListener('submit', formSend);
+    if(form){
+        form.addEventListener('submit', formSend);
+    }
+
 
     async function formSend(e) {
         e.preventDefault();
@@ -56,4 +59,4 @@ document.addEventListener('DOMContentLoaded', function(){
     function emailTest(input) {
         return !/ˆ\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
-})
+});
