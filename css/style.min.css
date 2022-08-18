@@ -90,7 +90,10 @@ h2{font-family:'Euclid Circular A';font-style:normal;font-weight:300;font-size:1
 .partners__form-wrapper{min-height:468px;margin-top:80px;background-image:url(../../img/mainbg.png);background-repeat:no-repeat;background-size:100% 670px;background-position:top 101px right 0}
 .partners__form-subtitle{font-weight:300;font-size:24px;line-height:24px;text-align:center;color:#92a4b2}
 .g-form{margin-top:132px;display:grid;grid-template-columns:624px 624px;grid-template-rows:90px 90px;justify-content:center;grid-gap:20px}
-.form__input{padding:25px 0 25px 30px;background:#0e3848;font-weight:600;font-size:18px;line-height:18px;text-transform:uppercase;color:#92a4b2;border:none}
+.form__input{padding:25px 0 25px 30px;background:#0e3848;font-weight:600;font-size:18px;line-height:18px;text-transform:uppercase;color:#92a4b2;border:none;outline:0}
+._error{box-shadow:0 0 15px red}
+.g-form__body{position:relative}
+.g-form__body:after{content:"";position:absolute;top:0;left:0;opacity:0;visibility:hidden}
 .questions__wrapper{min-height:500px}
 .questions__list{margin-bottom:50px;display:grid;grid-template-columns:890px 870px;grid-template-rows:minmax(max-content,max-content,max-content,max-content,max-content,max-content,max-content);justify-content:center;align-content:center;grid-template-areas:"questions__title questions__item-1" ". questions__item-2" ". questions__item-3" ". questions__item-4" ". questions__item-5" ". questions__item-6" ". questions__item-7"}
 .questions__title{grid-area:questions__title}

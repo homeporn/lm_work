@@ -572,7 +572,21 @@ h2 {
   line-height: 18px;
   text-transform: uppercase;
   color: #92A4B2;
-  border: none; }
+  border: none;
+  outline: none; }
+
+._error {
+  box-shadow: 0 0 15px red; }
+
+.g-form__body {
+  position: relative; }
+  .g-form__body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden; }
 
 .questions__wrapper {
   min-height: 500px; }
