@@ -280,7 +280,7 @@ h2 {
   .main__subtitle._active {
     transform: translate(0px, 0px);
     opacity: 1;
-    padding: 90px 0 137px 0; }
+    padding: 120px 0 180px 0; }
 
 .mobile-get-client {
   display: none; }
@@ -722,97 +722,43 @@ h2 {
   .services__item-container:nth-child(1) {
     background: url(../img/gradient/Polygon_1.png) #377472;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.3s ease 0s; }
-    .services__item-container:nth-child(1)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-size: 100% 100%; }
   .services__item-container:nth-child(2) {
     background: url(../img/gradient/Polygon_2.png) #13485C;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.3s ease 0s; }
-    .services__item-container:nth-child(2)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-size: 100% 100%; }
   .services__item-container:nth-child(3) {
     background: url(../img/gradient/Polygon_3.png) #3A4352;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position-y: 145px;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.3s ease 1s; }
-    .services__item-container:nth-child(3)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-position-y: 145px; }
   .services__item-container:nth-child(4) {
     background: url(../img/gradient/Polygon_4.png) #19333D;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position-y: -60px;
-    background-position-x: -707px;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s; }
-    .services__item-container:nth-child(4)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-position-x: -707px; }
   .services__item-container:nth-child(5) {
     background: url(../img/gradient/Polygon_4.png) #13485C;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s; }
-    .services__item-container:nth-child(5)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-size: 100% 100%; }
   .services__item-container:nth-child(6) {
     background: url(../img/gradient/Polygon_1.png) #377472;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s; }
-    .services__item-container:nth-child(6)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-size: 100% 100%; }
   .services__item-container:nth-child(7) {
     background: url(../img/gradient/Polygon_3.png) #3A4352;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position-y: 145px;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s; }
-    .services__item-container:nth-child(7)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-position-y: 145px; }
   .services__item-container:nth-child(8) {
     background: url(../img/gradient/Polygon_2.png) #19333D;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s; }
-    .services__item-container:nth-child(8)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-size: 100% 100%; }
   .services__item-container:nth-child(9) {
     background: url(../img/gradient/Polygon_1.png) #377472;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s; }
-    .services__item-container:nth-child(9)._active {
-      transform: translate(0px, 0px);
-      opacity: 1; }
+    background-size: 100% 100%; }
 
 .services__item-title {
   font-weight: 300;

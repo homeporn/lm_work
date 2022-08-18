@@ -41,7 +41,7 @@ h2{font-family:'Euclid Circular A';font-style:normal;font-weight:300;font-size:1
 .main__title{margin:0 auto;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
 .main__title._active{transform:translate(0,0);opacity:1}
 .main__subtitle{display:grid;grid-template-columns:100%;align-items:center;font-weight:300;font-size:38px;line-height:38px;text-align:center;color:#92a4b2;margin:0 auto;padding:43px 0 177px 0;transform:translate(0,120%);opacity:0;transition:all .8s ease .4s}
-.main__subtitle._active{transform:translate(0,0);opacity:1;padding:90px 0 137px 0}
+.main__subtitle._active{transform:translate(0,0);opacity:1;padding:120px 0 180px 0}
 .mobile-get-client{display:none}
 .lang__list{padding:16px;width:117px;height:80px;border:3px solid #4da19f;background-color:#0b222e;color:#f4f7fa;font-weight:600;font-size:18px;line-height:18px}
 .lang__list:focus-visible{outline:0}
@@ -119,24 +119,15 @@ h2{font-family:'Euclid Circular A';font-style:normal;font-weight:300;font-size:1
 .services__title._active{transform:translate(0,0);opacity:1;padding-top:180px;padding-bottom:180px}
 .services{display:flex;flex-direction:column;gap:50px}
 .services__item-container{max-width:100%;max-height:429px;padding:50px;left:81px;top:80px}
-.services__item-container:nth-child(1){background:url(../img/gradient/Polygon_1.png) #377472;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .3s ease 0s}
-.services__item-container:nth-child(1)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(2){background:url(../img/gradient/Polygon_2.png) #13485c;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .3s ease 0s}
-.services__item-container:nth-child(2)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(3){background:url(../img/gradient/Polygon_3.png) #3a4352;background-repeat:no-repeat;background-size:100% 100%;background-position-y:145px;transform:translate(0,120%);opacity:0;transition:all .3s ease 1s}
-.services__item-container:nth-child(3)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(4){background:url(../img/gradient/Polygon_4.png) #19333d;background-repeat:no-repeat;background-size:100% 100%;background-position-y:-60px;background-position-x:-707px;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
-.services__item-container:nth-child(4)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(5){background:url(../img/gradient/Polygon_4.png) #13485c;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
-.services__item-container:nth-child(5)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(6){background:url(../img/gradient/Polygon_1.png) #377472;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
-.services__item-container:nth-child(6)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(7){background:url(../img/gradient/Polygon_3.png) #3a4352;background-repeat:no-repeat;background-size:100% 100%;background-position-y:145px;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
-.services__item-container:nth-child(7)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(8){background:url(../img/gradient/Polygon_2.png) #19333d;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
-.services__item-container:nth-child(8)._active{transform:translate(0,0);opacity:1}
-.services__item-container:nth-child(9){background:url(../img/gradient/Polygon_1.png) #377472;background-repeat:no-repeat;background-size:100% 100%;transform:translate(0,120%);opacity:0;transition:all .8s ease 0s}
-.services__item-container:nth-child(9)._active{transform:translate(0,0);opacity:1}
+.services__item-container:nth-child(1){background:url(../img/gradient/Polygon_1.png) #377472;background-repeat:no-repeat;background-size:100% 100%}
+.services__item-container:nth-child(2){background:url(../img/gradient/Polygon_2.png) #13485c;background-repeat:no-repeat;background-size:100% 100%}
+.services__item-container:nth-child(3){background:url(../img/gradient/Polygon_3.png) #3a4352;background-repeat:no-repeat;background-size:100% 100%;background-position-y:145px}
+.services__item-container:nth-child(4){background:url(../img/gradient/Polygon_4.png) #19333d;background-repeat:no-repeat;background-size:100% 100%;background-position-y:-60px;background-position-x:-707px}
+.services__item-container:nth-child(5){background:url(../img/gradient/Polygon_4.png) #13485c;background-repeat:no-repeat;background-size:100% 100%}
+.services__item-container:nth-child(6){background:url(../img/gradient/Polygon_1.png) #377472;background-repeat:no-repeat;background-size:100% 100%}
+.services__item-container:nth-child(7){background:url(../img/gradient/Polygon_3.png) #3a4352;background-repeat:no-repeat;background-size:100% 100%;background-position-y:145px}
+.services__item-container:nth-child(8){background:url(../img/gradient/Polygon_2.png) #19333d;background-repeat:no-repeat;background-size:100% 100%}
+.services__item-container:nth-child(9){background:url(../img/gradient/Polygon_1.png) #377472;background-repeat:no-repeat;background-size:100% 100%}
 .services__item-title{font-weight:300;font-size:32px;line-height:32px;color:#f4f7fa}
 .services__item-descr{padding-top:30px;font-weight:300;font-size:22px;line-height:22px;color:#d5dfe6}
 .container__button{display:flex;justify-content:center;padding:58px 0 157px 0;margin:0 auto}
