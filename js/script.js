@@ -100,10 +100,6 @@ dropdowns.forEach(dropdown => {
   });
 });
 
-if (!$(this).valid()){
-  return;
-}
-
 $('g-form').submit(function(e){
   e.preventDefault();
   $.ajax({
