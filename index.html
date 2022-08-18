@@ -194,16 +194,16 @@
                 <div class="container">
                     <h2 class="partners__form-subtitle">Оставьте контакты — и мы свяжемся с вами</h2>
                     <div class="partners__form-send">
-                        <form class="g-form" id="g-form-1" method="POST" action="">
+                        <form class="g-form" action="#">
 
-                                    <input id="name" class="form__input"  placeholder="Как вас зовут?" >
+                                    <input name="name" required type="text" class="form__input"  placeholder="Как вас зовут?" >
 
-                                    <input id="email" class="form__input"  placeholder="E-mail">
+                                    <input name="email" required type="email" class="form__input"  placeholder="E-mail">
 
-                                    <input id="tel" class="form__input"  placeholder="Телефон">
+                                    <input name="tel" required class="form__input"  placeholder="Телефон">
 
 
-                                <button class="g-form__button">Отправить</button>
+                                <button class="g-form__button form_submit">Отправить</button>
                                   </form>
                             </div>
                         </div>
