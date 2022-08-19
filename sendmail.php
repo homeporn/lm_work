@@ -1,16 +1,25 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
 
-require 'mailer/src/PHPMailer.php';
-require 'mailer/src/SMTP.php'
-require 'mailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/Exception.php';
 
 $mail = new PHPMailer (true);
 $mail -> CharSet = "UTF-8"
-$mail -> setLangueage('ru', 'mailer/language/');
+$mail -> setLangueage('ru', 'PHPMailer/language/');
 $mail -> IsHTML(true);
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$phone = $_POST["tel"];
+
+$email_template = "PHPMailer/template_mail.html";
+$body = file_get_contents($email_template);
+$body = str_replace('%name%', $name, $body);
+$body = str_replace('%email%', $email, $body);
+$body = str_replace('%phone%', $tel, $body);
+$body = str_replace('%message%', $message, $body);
 
 $mail->isSMTP();                                            //Send using SMTP
 $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
@@ -20,32 +29,23 @@ $mail->Password   = 'aetftmllqbzvrdlx';                               //SMTP pas
 $mail->SMTPSecure = "tls"            //Enable implicit TLS encryption
 $mail->Port       = 465;
 
-$mail -> setFrom('landmarksiteform@gmail.com', 'Новая заявка на сайте');
 $mail -> addAddress('inboxlmfostsite@gmail.com');
-$mail -> Subject = "Новая заявка на сайте";
+$mail -> setFrom($email);
+$mail->Subject = "[Заявка с формы]";
+$mail->MsgHTML($body);
 
-$body = 'Данные из формы на сайте:';
-
-if(trim(!empty($_POST['name']))){
-    $body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>'
-}
-if(trim(!empty($_POST['email']))){
-    $body.='<p><strong>Электронная почта:</strong> '.$_POST['email'].'</p>'
-}
-if(trim(!empty($_POST['tel']))){
-    $body.='<p><strong>Номер телефона:</strong> '.$_POST['tel'].'</p>'
-}
-
-$mail->Body = $body;
-
-if(!$mail->send()){
-    $message = 'Ошибка';
+if (!$mail->send()) {
+  $message = "Ошибка отправки";
 } else {
-    $message = 'Данные отправлены!';
+  $message = "Данные отправлены!";
 }
 
-$response = ['message' => $message]
+/* Возвращаем ответ */
+$response = ["message" => $message];
 
+/* Ответ в формате JSON */
 header('Content-type: application/json');
 echo json_encode($response);
+
 ?>
+
