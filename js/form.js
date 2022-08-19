@@ -91,7 +91,7 @@ function inputCheck(el) {
     el.style.border = "2px solid rgb(255, 0, 0)";
   }
 }
-<br />// Здесь проверяем, можно ли отправить форму
+// Здесь проверяем, можно ли отправить форму
 function formCheck(e) {
   e.preventDefault(); // блокируем input
   const allValid = []; // создаем массив валидных значений
