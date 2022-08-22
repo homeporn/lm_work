@@ -60,6 +60,21 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+var acc = document.getElementsByClassName("laws__item-menu");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active_q");
+        var menumenu = this.nextElementSibling;
+        if (menumenu.style.maxHeight) {
+          menumenu.style.maxHeight = null;
+        } else {
+          menumenu.style.maxHeight = menumenu.scrollHeight + "px";
+        }
+    });
+}
+
 const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(dropdown => {

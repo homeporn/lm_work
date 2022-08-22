@@ -1,0 +1,235 @@
+
+.reg__header {
+    text-align: center;
+    padding: 180px 80px;
+    background: url(../../img/mainbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 260px;
+    background-position-y: 75%;
+}
+.reg__title {
+    margin: 0 auto;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        padding-bottom: 45px;
+    }
+}
+
+.reg__subtitle {
+    margin: 0 auto;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #92A4B2;
+    &._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+        padding-top: 50px;
+    }
+}
+
+.laws__list{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.laws__item-menu {
+    text-align: left;
+    width: 100%;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 50px;
+    background-color: transparent;
+    color: $gray;
+    border: none;
+    outline: none;
+    transition: 1s;
+    border-bottom: 1px solid $gray;
+    cursor: pointer;
+        &:after {
+            content: url('../../icons/arrowdown.svg');
+            width: 11px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+}
+
+
+.laws__drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 10px;
+}
+
+
+
+
+.laws__alt {
+    padding-top: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.docs {
+    list-style-type: none;
+}
+
+.docs a{
+    font-size: 24px;
+    line-height: 24px;
+    color: #F4F7FA;
+    text-decoration: none;
+}
+
+.docs img {
+    height: 50px;
+}
+
+.rules__wrapper {
+    background: #0E3848;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.rules__title {
+
+    padding-bottom: 60px;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #F4F7FA;
+    width: 50%;
+}
+
+.rules__descr {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    color: #92A4B2;
+    width: 50%;
+    padding-bottom: 200px;
+}
+
+.rules__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rules__info-item {
+    display: flex;
+        width: 50%;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    color: #F4F7FA;
+    gap: 50px;
+}
+
+.rights__wrapper{
+    padding: 180px 0 180px 0;
+}
+
+.rights__wrapper h2 {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #F4F7FA;
+}
+
+.rights__wrapper p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #92A4B2;
+}
+
+.mediator__container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-columns: max-content max-content max-content max-content;
+    grid-auto-rows: 1fr;
+    gap: 5px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "title item-1 data-1"
+      "title item-2 data-2"
+      "logo_m item-3 data-3"
+      ". item-4 data-4"
+      ". item-5 data-5"
+      ". descr descr";
+  }
+
+  .item-1 { grid-area: item-1; }
+
+  .item-2 { grid-area: item-2; }
+
+  .descr { grid-area: descr; }
+
+  .item-3 { grid-area: item-3; }
+
+  .item-4 { grid-area: item-4; }
+
+  .item-5 { grid-area: item-5; }
+
+  .data-1 { grid-area: data-1; }
+
+  .data-2 { grid-area: data-2; }
+
+  .data-3 { grid-area: data-3; }
+
+  .data-4 { grid-area: data-4; }
+
+  .data-5 { grid-area: data-5; }
+
+  .logo_m { grid-area: logo_m; }
+
+  .title { grid-area: title; }
+
+.mediator__item-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #F4F7FA;
+}
+
+.mediator__item-contacts{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #4DA19F;
+}
+
+.mediator__item-office {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #F4F7FA;
+}
+
+.mediator__descr {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #92A4B2;
+}
