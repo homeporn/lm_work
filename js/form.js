@@ -58,7 +58,7 @@
 //     }
 // });
 
-const form = document.forms["g-form"];
+const form = document.forms["form"];
 const formArr = Array.from(form);
 const validFormArr = [];
 const button = form.elements["submit"];
