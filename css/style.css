@@ -1169,6 +1169,7 @@ h5 {
   font-size: 1em; }
 
 .structure__wrapper-title {
+  text-align: center;
   margin: 0 auto;
   color: #92A4B2;
   padding-bottom: 100px; }
