@@ -42,13 +42,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 55%;
+    width: 63.0891950688905vw;
     margin: 0 auto;
 }
 
 .laws__item-menu {
+    width: 63.0891950688905vw;
     text-align: left;
-    width: 100%;
     font-weight: 300;
     font-size: 24px;
     line-height: 50px;
@@ -82,7 +82,6 @@
 
 .laws__alt {
     padding-top: 75px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -90,6 +89,7 @@
 
 
 .docs {
+    width: 100%;
     list-style-type: none;
 }
 

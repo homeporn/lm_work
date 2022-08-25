@@ -151,7 +151,7 @@
     }
 
 
-    .g-form {
+    .form {
         display: flex;
         flex-direction: column;
     }
@@ -234,5 +234,16 @@
         display: flex;
         justify-content: center;
         padding: 58px 0 50px 0;
+    }
+    .mediator__item-office{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .laws__item-menu span {
+        padding-left: 15px;
+        font-size: 0.7em;
+    }
+    .about__goals {
+        flex-direction: column;
     }
 }
