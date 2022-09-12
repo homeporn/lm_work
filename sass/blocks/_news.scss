@@ -1,0 +1,30 @@
+h6 a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: $gray;
+    transition: all 0.5s;
+    &:hover {
+        color: $button;
+    }
+}
+
+.news__item {
+    position: relative;
+    width: 50vw;
+    color: $gray;
+    &-descr {
+        color: $gray;
+    }
+}
+
+.news__picture img{
+    width: 100%;
+}
+
+.descr__hide {
+    display: none;
+}
+
+.descr__open {
+    display: block;
+}

@@ -1237,6 +1237,30 @@ h5 {
   .documents__item a:hover {
     color: #4DA19F; }
 
+h6 a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #F4F7FA;
+  transition: all 0.5s; }
+  h6 a:hover {
+    color: #4DA19F; }
+
+.news__item {
+  position: relative;
+  width: 50vw;
+  color: #F4F7FA; }
+  .news__item-descr {
+    color: #F4F7FA; }
+
+.news__picture img {
+  width: 100%; }
+
+.descr__hide {
+  display: none; }
+
+.descr__open {
+  display: block; }
+
 @media (max-width: 1920px) {
   .container {
     max-width: 1600px;
